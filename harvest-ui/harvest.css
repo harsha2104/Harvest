@@ -145,7 +145,14 @@
 	padding-left: 20px;
 	vertical-align: top;
 }
-
+.column-creator{
+	display:inline-block;
+    margin-left:20px;
+    vertical-align:top;
+}
+.panelBody {
+    padding:15px;
+}
 .harvest-logo {
 	
 }
