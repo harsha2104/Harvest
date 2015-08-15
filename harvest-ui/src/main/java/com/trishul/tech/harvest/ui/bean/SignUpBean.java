@@ -134,7 +134,7 @@ public class SignUpBean implements Serializable {
 	}
 
 	public String signUp() {
-		String loginRedirect = null;
+		String loginRedirect1 = null;
 		boolean result = CredentialsValidationBean.validateSignUp(fname, mname, lname, email, pword, confirmpword);
 		try {
 			if (result) {
@@ -142,17 +142,17 @@ public class SignUpBean implements Serializable {
 				HttpSession session = LoginUtility.getSession();
 				session.setAttribute("username", uname);
 
-				loginRedirect = "home";
+				loginRedirect1 = "home";
 			} else {
 
 				FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_WARN,
 						"Invalid Sign Up Credentials!", "Please Try Again!"));
-				loginRedirect = "signUp";
+				loginRedirect1 = "signUp";
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return loginRedirect;
+		return loginRedirect1;
 	}
 
 }
