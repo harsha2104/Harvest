@@ -3,10 +3,17 @@
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:p="http://primefaces.org/ui">
 <h:head>
-	<title>Harvest Login</title>
-	<h:outputStylesheet library="css" name="harvest.css" />
+	<title>Harvest Welcome</title>
 </h:head>
 <h:body>
+	<h:outputStylesheet library="css" name="harvest.css" />
+	<div id="harvest-header" class="harvest-head-wrapper clearfix">
+		<div id="harvest-headContent">
+			<h:outputText value="HARVEST" />
+			<!-- <img src="resources/images/harvest_banner.png"  width="150" height="50"/> -->
+			<!--<h:graphicImage name="images/harvest_banner.png" width="150" height="50"></h:graphicImage>-->
+		</div>
+	</div>
 	<h:form id="loginForm">
 		<p:growl id="msg" showDetail="true" life="3000" />
 		<p:panel header="Login" style="width: 360px;">
