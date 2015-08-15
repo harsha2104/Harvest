@@ -1,0 +1,254 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] project-harvest
+[INFO] harvest-blogic
+[INFO] harvest-data-persistence
+[INFO] harvest-ws-services
+[INFO] harvest-webapp
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building project-harvest 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ project-harvest ---
+[INFO] com.trishul.tech.harvest:project-harvest:pom:0.0.1-SNAPSHOT
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building harvest-blogic 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ harvest-blogic ---
+[INFO] com.trishul.tech.harvest:harvest-blogic:jar:0.0.1-SNAPSHOT
+[INFO] \- junit:junit:jar:3.8.1:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building harvest-data-persistence 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ harvest-data-persistence ---
+[INFO] com.trishul.tech.harvest:harvest-data-persistence:jar:0.0.1-SNAPSHOT
+[INFO] +- com.trishul.tech.harvest:harvest-blogic:jar:0.0.1-SNAPSHOT:compile
+[INFO] +- org.mongodb:mongo-java-driver:jar:3.0.2:compile
+[INFO] +- org.springframework.data:spring-data-mongodb:jar:1.7.2.RELEASE:compile
+[INFO] |  +- org.springframework:spring-tx:jar:4.0.9.RELEASE:compile
+[INFO] |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  \- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-context:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  +- org.springframework:spring-beans:jar:4.0.9.RELEASE:compile
+[INFO] |  |  \- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- org.springframework:spring-core:jar:4.0.9.RELEASE:compile
+[INFO] |  +- org.springframework:spring-expression:jar:4.0.9.RELEASE:compile
+[INFO] |  |  \- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- org.springframework.data:spring-data-commons:jar:1.10.2.RELEASE:compile
+[INFO] |  |  +- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.12:compile - omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:jcl-over-slf4j:jar:1.7.12:runtime - omitted for duplicate)
+[INFO] |  +- (org.mongodb:mongo-java-driver:jar:2.13.0:compile - omitted for conflict with 3.0.2)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.12:compile - omitted for conflict with 1.7.5)
+[INFO] |  \- (org.slf4j:jcl-over-slf4j:jar:1.7.12:runtime - omitted for conflict with 1.7.5)
+[INFO] +- cglib:cglib:jar:2.2.2:compile
+[INFO] |  \- asm:asm:jar:3.3.1:compile
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.2.3:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.2.3:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.2.3:compile
+[INFO] +- org.springframework:spring-context:jar:4.0.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.0.0.RELEASE:compile
+[INFO] |  |  +- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  |  +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  |  \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  +- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  \- (org.springframework:spring-expression:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] +- org.springframework:spring-webmvc:jar:4.0.0.RELEASE:compile
+[INFO] |  +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  +- (org.springframework:spring-expression:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  \- org.springframework:spring-web:jar:4.0.0.RELEASE:compile
+[INFO] |     +- (aopalliance:aopalliance:jar:1.0:compile - omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-aop:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |     +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |     \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] +- org.aspectj:aspectjrt:jar:1.7.4:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.5:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for conflict with 1.2.15)
+[INFO] +- log4j:log4j:jar:1.2.15:runtime
+[INFO] +- javax.inject:javax.inject:jar:1:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] +- javax.servlet.jsp:jsp-api:jar:2.1:provided
+[INFO] +- javax.servlet:jstl:jar:1.2:compile
+[INFO] \- junit:junit:jar:4.7:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building harvest-ws-services 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ harvest-ws-services ---
+[INFO] com.trishul.tech.harvest:harvest-ws-services:jar:0.0.1-SNAPSHOT
+[INFO] +- com.trishul.tech.harvest:harvest-blogic:jar:0.0.1-SNAPSHOT:compile
+[INFO] +- com.trishul.tech.harvest:harvest-data-persistence:jar:0.0.1-SNAPSHOT:compile
+[INFO] |  +- (com.trishul.tech.harvest:harvest-blogic:jar:0.0.1-SNAPSHOT:compile - omitted for duplicate)
+[INFO] |  +- org.mongodb:mongo-java-driver:jar:3.0.2:compile
+[INFO] |  +- org.springframework.data:spring-data-mongodb:jar:1.7.2.RELEASE:compile
+[INFO] |  |  +- org.springframework:spring-tx:jar:4.0.9.RELEASE:compile
+[INFO] |  |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  \- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-context:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  +- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  +- (org.springframework:spring-expression:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:1.10.2.RELEASE:compile
+[INFO] |  |  |  +- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.12:compile - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:jcl-over-slf4j:jar:1.7.12:runtime - omitted for duplicate)
+[INFO] |  |  +- (org.mongodb:mongo-java-driver:jar:2.13.0:compile - omitted for conflict with 3.0.2)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.12:compile - omitted for conflict with 1.7.5)
+[INFO] |  |  \- (org.slf4j:jcl-over-slf4j:jar:1.7.12:runtime - omitted for conflict with 1.7.5)
+[INFO] |  +- cglib:cglib:jar:2.2.2:compile
+[INFO] |  |  \- asm:asm:jar:3.3.1:compile
+[INFO] |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.2.3:compile - omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-webmvc:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- (org.aspectj:aspectjrt:jar:1.7.4:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.5:compile - omitted for duplicate)
+[INFO] |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  +- (org.slf4j:slf4j-log4j12:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  +- (log4j:log4j:jar:1.2.15:runtime - omitted for duplicate)
+[INFO] |  +- (javax.inject:javax.inject:jar:1:compile - omitted for duplicate)
+[INFO] |  \- (javax.servlet:jstl:jar:1.2:compile - omitted for duplicate)
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.2.3:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.2.3:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.2.3:compile
+[INFO] +- org.springframework:spring-context:jar:4.0.0.RELEASE:compile
+[INFO] |  +- org.springframework:spring-aop:jar:4.0.0.RELEASE:compile
+[INFO] |  |  +- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  |  +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  |  \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  +- org.springframework:spring-beans:jar:4.0.0.RELEASE:compile
+[INFO] |  |  \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  +- org.springframework:spring-core:jar:4.0.0.RELEASE:compile
+[INFO] |  \- org.springframework:spring-expression:jar:4.0.0.RELEASE:compile
+[INFO] |     \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] +- org.springframework:spring-webmvc:jar:4.0.0.RELEASE:compile
+[INFO] |  +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- (org.springframework:spring-expression:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  \- org.springframework:spring-web:jar:4.0.0.RELEASE:compile
+[INFO] |     +- (aopalliance:aopalliance:jar:1.0:compile - omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-aop:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |     +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |     \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] +- org.aspectj:aspectjrt:jar:1.7.4:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] +- org.slf4j:jcl-over-slf4j:jar:1.7.5:runtime
+[INFO] |  \- (org.slf4j:slf4j-api:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] +- org.slf4j:slf4j-log4j12:jar:1.7.5:runtime
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for conflict with 1.2.15)
+[INFO] +- log4j:log4j:jar:1.2.15:runtime
+[INFO] +- javax.inject:javax.inject:jar:1:compile
+[INFO] +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] +- javax.servlet.jsp:jsp-api:jar:2.1:provided
+[INFO] +- javax.servlet:jstl:jar:1.2:compile
+[INFO] \- junit:junit:jar:4.7:test
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building harvest-webapp 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ harvest-webapp ---
+[INFO] com.trishul.tech.harvest:harvest-webapp:war:0.0.1-SNAPSHOT
+[INFO] +- com.trishul.tech.harvest:harvest-ws-services:jar:0.0.1-SNAPSHOT:compile
+[INFO] |  +- com.trishul.tech.harvest:harvest-blogic:jar:0.0.1-SNAPSHOT:compile
+[INFO] |  +- com.trishul.tech.harvest:harvest-data-persistence:jar:0.0.1-SNAPSHOT:compile
+[INFO] |  |  +- (com.trishul.tech.harvest:harvest-blogic:jar:0.0.1-SNAPSHOT:compile - omitted for duplicate)
+[INFO] |  |  +- org.mongodb:mongo-java-driver:jar:3.0.2:compile
+[INFO] |  |  +- org.springframework.data:spring-data-mongodb:jar:1.7.2.RELEASE:compile
+[INFO] |  |  |  +- org.springframework:spring-tx:jar:4.0.9.RELEASE:compile
+[INFO] |  |  |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  +- (org.springframework:spring-context:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  |  +- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  |  +- (org.springframework:spring-expression:jar:4.0.9.RELEASE:compile - omitted for conflict with 4.0.0.RELEASE)
+[INFO] |  |  |  +- org.springframework.data:spring-data-commons:jar:1.10.2.RELEASE:compile
+[INFO] |  |  |  |  +- (org.springframework:spring-core:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.springframework:spring-beans:jar:4.0.9.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.12:compile - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.slf4j:jcl-over-slf4j:jar:1.7.12:runtime - omitted for duplicate)
+[INFO] |  |  |  +- (org.mongodb:mongo-java-driver:jar:2.13.0:compile - omitted for conflict with 3.0.2)
+[INFO] |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.12:compile - omitted for conflict with 1.7.5)
+[INFO] |  |  |  \- (org.slf4j:jcl-over-slf4j:jar:1.7.12:runtime - omitted for conflict with 1.7.5)
+[INFO] |  |  +- cglib:cglib:jar:2.2.2:compile
+[INFO] |  |  |  \- asm:asm:jar:3.3.1:compile
+[INFO] |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.2.3:compile - omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-webmvc:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.aspectj:aspectjrt:jar:1.7.4:compile - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.5:compile - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  |  +- (org.slf4j:slf4j-log4j12:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  |  +- (log4j:log4j:jar:1.2.15:runtime - omitted for duplicate)
+[INFO] |  |  +- (javax.inject:javax.inject:jar:1:compile - omitted for duplicate)
+[INFO] |  |  \- (javax.servlet:jstl:jar:1.2:compile - omitted for duplicate)
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.2.3:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.2.3:compile
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.2.3:compile
+[INFO] |  +- org.springframework:spring-context:jar:4.0.0.RELEASE:compile
+[INFO] |  |  +- org.springframework:spring-aop:jar:4.0.0.RELEASE:compile
+[INFO] |  |  |  +- aopalliance:aopalliance:jar:1.0:compile
+[INFO] |  |  |  +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  |  |  \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  |  +- org.springframework:spring-beans:jar:4.0.0.RELEASE:compile
+[INFO] |  |  |  \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for conflict with 4.0.9.RELEASE)
+[INFO] |  |  +- org.springframework:spring-core:jar:4.0.0.RELEASE:compile
+[INFO] |  |  \- org.springframework:spring-expression:jar:4.0.0.RELEASE:compile
+[INFO] |  |     \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- org.springframework:spring-webmvc:jar:4.0.0.RELEASE:compile
+[INFO] |  |  +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  +- (org.springframework:spring-expression:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |  \- org.springframework:spring-web:jar:4.0.0.RELEASE:compile
+[INFO] |  |     +- (aopalliance:aopalliance:jar:1.0:compile - omitted for duplicate)
+[INFO] |  |     +- (org.springframework:spring-aop:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |     +- (org.springframework:spring-beans:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |     +- (org.springframework:spring-context:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  |     \- (org.springframework:spring-core:jar:4.0.0.RELEASE:compile - omitted for duplicate)
+[INFO] |  +- org.aspectj:aspectjrt:jar:1.7.4:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.5:compile
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.5:runtime
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  +- org.slf4j:slf4j-log4j12:jar:1.7.5:runtime
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.5:runtime - omitted for duplicate)
+[INFO] |  |  \- (log4j:log4j:jar:1.2.17:runtime - omitted for conflict with 1.2.15)
+[INFO] |  +- log4j:log4j:jar:1.2.15:runtime
+[INFO] |  +- javax.inject:javax.inject:jar:1:compile
+[INFO] |  \- javax.servlet:jstl:jar:1.2:compile
+[INFO] \- javax.servlet:servlet-api:jar:2.5:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] project-harvest .................................... SUCCESS [  1.036 s]
+[INFO] harvest-blogic ..................................... SUCCESS [  0.042 s]
+[INFO] harvest-data-persistence ........................... SUCCESS [  0.471 s]
+[INFO] harvest-ws-services ................................ SUCCESS [  0.086 s]
+[INFO] harvest-webapp ..................................... SUCCESS [  0.093 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.050 s
+[INFO] Finished at: 2015-08-15T17:33:58+05:30
+[INFO] Final Memory: 13M/205M
+[INFO] ------------------------------------------------------------------------
