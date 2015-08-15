@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Harvest SignUp Page</title>
+</h:head>
+<h:form id="signUpForm">
+	<h:body>
+		<h:outputStylesheet library="css" name="harvest.css" />
+		<div id="harvest-header" class="harvest-head-wrapper clearfix">
+			<div id="harvest-headContent">
+
+				<h:outputText value="HARVEST" />
+			</div>
+		</div>
+		<div id="formId">
+			<p:growl id="msg" showDetail="true" life="3000" />
+			<p:panel header="Login" style="width: 360px;">
+				<h:panelGrid id="loginPanel" columns="6">
+					<h:outputText value="First Name"></h:outputText>
+					<p:inputText id="fname" value="#{signUpBean.fname}"></p:inputText>
+					<p:spacer></p:spacer>
+
+					<p:message for="first name"></p:message>
+
+					<h:outputText value="mname"></h:outputText>
+					<p:inputText id="mname" value="#{signUpBean.mname}"></p:inputText>
+					<p:spacer></p:spacer>
+
+					<p:message for="middle name"></p:message>
+					<h:outputText value="lname"></h:outputText>
+					<p:inputText id="lname" value="#{signUpBean.lname}"></p:inputText>
+					<p:spacer></p:spacer>
+
+					<p:message for="last name"></p:message>
+
+					<h:outputText value="Email"></h:outputText>
+					<p:inputText id="ename" value="#{signUpBean.email}"></p:inputText>
+
+					<p:spacer></p:spacer>
+
+					<p:message for="Email"></p:message>
+
+					<h:outputText value="Password"></h:outputText>
+					<p:inputText id="password" value="#{signUpBean.pword}"></p:inputText>
+
+					<p:spacer></p:spacer>
+
+					<p:message for="Email"></p:message>
+
+					<h:outputText value="Confirm Password"></h:outputText>
+					<p:inputText id="confirm password"
+						value="#{signUpBean.confirmpword}"></p:inputText>
+					<p:spacer></p:spacer>
+					<h:commandButton action="#{signUpBean.signUp}" value="proceed"></h:commandButton>
+				</h:panelGrid>
+			</p:panel>
+		</div>
+	</h:body>
+</h:form>
+</html>

@@ -28,4 +28,20 @@ public class CredentialsValidationBean {
 		return validationResult;
 	}
 
+	public static boolean validateSignUp(String fname, String mname, String lname, String email, String pword,
+			String confirmpword) {
+		boolean validationResult = false;
+
+		if ((fname.length() >= 0 && fname != null) && (lname.length() >= 0 && lname != null)) {
+
+			if ((email.length() >= 0 && email != null) && (pword.length() >= 0 && pword != null)
+					&& (confirmpword.length() >= 0 && confirmpword != null)) {
+				if ((pword.equals(confirmpword))) {
+					validationResult = true;
+				}
+			}
+		}
+		return validationResult;
+	}
+
 }
