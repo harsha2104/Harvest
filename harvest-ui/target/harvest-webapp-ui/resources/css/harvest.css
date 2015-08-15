@@ -1,0 +1,149 @@
+#harvest-header {
+    background: #0078c0;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(0, 120, 192);
+    border-top: #004892 1px solid;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(0, 72, 146);
+    padding-bottom: 15px;
+}
+#harvest-header #harvest-headContent {
+    max-width: 990px;
+    _width: 990px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 15px 0 0;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    position: relative;
+    text-align: -webkit-left;
+    text-rendering: auto;
+    font-size: xx-large;
+    font-family: Berlin Sans FB Demi;
+    font-style: italic;
+    color: silver;
+    z-index: 10;
+}
+.clearfix {
+    display: block;
+}
+.harvest-head-wrapper {
+    background: #004d9d;
+    clear: both;
+}
+
+#navWrap {
+    position: relative;
+    z-index: 1080;
+}
+#harvest-contentWrapper {
+    background: #F3F3F3;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(243, 243, 243);
+}
+.harvest-content {
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    background: #F3F3F3;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(243, 243, 243);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1022px;
+}
+.harvest-content .harvest-content-module-1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1002px;
+    vertical-align: top;
+    border: 1px solid #d4d4d4;
+    border-top-color: rgb(212, 212, 212);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(212, 212, 212);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(212, 212, 212);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(212, 212, 212);
+    border-left-style: solid;
+    border-left-width: 1px;
+    background: #FFFFFF;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin: 20px 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.harvest-cell-container {
+    display: table;
+    width: 100%;
+}
+.harvest-cell-container .cell {
+    display: table-cell;
+    padding: 20px 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    vertical-align: top;
+}
+.harvest-logo {
+	
+}
+.harvest-Footer {
+    background-color:#97a91b;
+    color:#000000;
+    clear:both;
+    text-align:center;
+    padding:1px; 
+}
